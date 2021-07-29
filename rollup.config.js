@@ -32,13 +32,12 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
-    resolve({
-      extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.scss'],
-    }),
+    resolve(),
     terser(),
     commonjs(),
     typescript(),
     alias({
+      resolve: ['.ts', '.tsx', '.js', '.jsx', '.json', '.scss'],
       entries: [
         { find: '@src', replacement: `${root}/src` },
         { find: '@assets', replacement: `${root}/assets` },
