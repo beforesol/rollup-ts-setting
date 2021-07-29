@@ -13,7 +13,7 @@ const DemoComponent:React.FC<IOwnProps> = ({
 }) => {
   return (
     <div className={cx('demo')}>
-      데모컴포넌트
+      demo component
       <Arrow />
     </div>
   )
