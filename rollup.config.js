@@ -33,7 +33,7 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve({
-      extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', 'scss'],
+      extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.scss'],
     }),
     terser(),
     commonjs(),
